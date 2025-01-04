@@ -33,35 +33,29 @@ function populateStaffTable() {
 
 // Function to handle the Edit action
 function editStaff(staffId) {
-    const staff = staffData.find((s) => s.id === staffId);
-    if (staff) {
-        // Redirect to Edit Staff page with staff ID as a query parameter
-        window.location.href = `editstaff.html?id=${staff.id}`;
-    } else {
-        alert("Staff member not found.");
-    }
+        alert('Are you sure to edit details?');
+        window.location.href = `editstaff.html?staffid=${staffId}`;
 }
 
 // Function to handle the Delete action
 function deleteStaff(staffId) {
-    if (confirm("Are you sure you want to delete this staff member?")) {
-        const index = staffData.findIndex((s) => s.id === staffId);
-        if (index !== -1) {
+    const index = staffData.findIndex((s) => s.id === staffId);
+    if (index !== -1) {
+        if (confirm(`Are you sure you want to delete ${staffData[index].name}?`)) {
             staffData.splice(index, 1); // Remove the staff member
             alert("Staff member deleted successfully.");
             populateStaffTable(); // Refresh the table
-        } else {
-            alert("Staff member not found.");
         }
+    } else {
+        alert("Staff member not found.");
     }
 }
 
 // Call populateStaffTable on page load
 window.onload = populateStaffTable;
 
-
+// Logout function
 function logout() {
     alert("Logging out...");
-    // Here you can add actual logout logic
     window.location.href = "index.html"; // Redirect to login page
 }
