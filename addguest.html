@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Guest</title>
+    <link rel="stylesheet" href="./assets/css/addguest.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <h1>Add Guest</h1>
+        </header>
+
+        <!-- Add Guest Form -->
+        <div class="form-container">
+            <form id="add-guest-form">
+
+                <label for="guest-id">ID:</label>
+                <input type="int" id="guest-ID-input" required>
+
+                <label for="guest-name">Guest Name:</label>
+                <input type="text" id="guest-name-input" required>
+
+                <label for="guest-contact">Contact Number:</label>
+                <input type="text" id="guest-contact-input" required>
+
+                <label for="room-type">Room Type:</label>
+                <select id="room-type"  class="room-type">
+                    <option value="Single AC">Single AC</option>
+                    <option value="Single Non AC">Single Non AC</option>
+                    <option value="Double AC">Double AC</option>
+                    <option value="Double AC">Double AC</option>
+                </select>
+
+                <label for="check-in">Check-in Date:</label>
+                <input type="date" id="check-in" required>
+
+                <label for="status">Status:</label>
+                <select id="status" class="status" required>
+                    <option value="Checked In">Checked In</option>
+                    <option value="Checked Out">Checked Out</option>
+                </select>
+
+                <label for="payment-status">Payment Status:</label>
+                <select id="payment-status" class="payment-status" required>
+                    <option value="Paid">Paid</option>
+                    <option value="Unpaid">Unpaid</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Add Guest</button>
+                <button type="button" onclick="goBackToGuests()" class="back-btn">Back</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="./assets/js/addguest.js"></script>
+</body>
+</html>

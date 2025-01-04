@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Reports</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/viewreport.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="./assets/images/logo.png" alt="Hotel Logo" class="logo">
+                <h2>Hotel Admin</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="bookinglist.html" class="nav-item"><i class="fa-solid fa-book"></i> Bookings</a>
+                <a href="rooms.html" class="nav-item"><i class="fa-solid fa-bed"></i> Rooms</a>
+                <a href="guest.html" class="nav-item"><i class="fa-solid fa-restroom"></i> Guests</a>
+                <a href="staff.html" class="nav-item"><i class="fa-solid fa-people-carry"></i> Staff</a>
+                <a href="inventory.html" class="nav-item"><i class="fa-solid fa-warehouse"></i> Inventory</a>
+                <a href="#reports" class="nav-item active"><i class="fa-regular fa-newspaper"></i> Reports</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-nav">
+                <h1>Dashboard</h1>
+                <div class="profile">
+                    <span class="profile-name"><strong>Admin</strong></span>
+                    <button onclick="logout()" class="logout-btn"><strong>Logout</strong></button>
+                </div>
+            </header>
+
+            <!-- Report List -->
+            <section id="report-list" class="content-section">
+                <h2>Reports</h2>
+
+                <div class="action-buttons">
+                    <button onclick="navigateTo('generatereport.html')" class="tab-btn">Generate Report</button>
+                    <button onclick="navigateTo('exportreport.html')" class="tab-btn">Export Report</button>
+                </div>
+    
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search reports..." onkeyup="searchReports()">
+                </div>
+    
+                <table class="report-table">
+                    <thead>
+                        <tr>
+                            <th>Report Name</th>
+                            <th>Type</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="report-list-body">
+                        <tr>
+                            <td>Revenue Report - January</td>
+                            <td>Financial</td>
+                            <td>01/31/2024</td>
+                            <td>Completed</td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Occupancy Report - January</td>
+                            <td>Operational</td>
+                            <td>01/31/2024</td>
+                            <td>Completed</td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Guest Feedback - January</td>
+                            <td>Survey</td>
+                            <td>01/31/2024</td>
+                            <td>Completed</td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Room Availability - February</td>
+                            <td>Operational</td>
+                            <td>02/28/2024</td>
+                            <td>In Progress</td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Expense Report - February</td>
+                            <td>Financial</td>
+                            <td>02/28/2024</td>
+                            <td>In Progress</td>
+                            <td><button class="action-btn">View</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="./assets/js/viewreport.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d7eaf6; /* Light blue background */
+    color: #000; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Content */
+.main-content {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background-color: #ffffff; /* White container background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #112b54;
+}
+
+.top-nav h1 {
+    font-size: 1.8em;
+    color: #112b54; /* Dark blue heading */
+}
+
+
+
+/* Add Guest Form */
+.form-container {
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #112b54; /* Dark blue labels */
+}
+
+form input , .room-type, .status, .payment-status{
+    margin-bottom: 10px;
+    border: 1.5px solid #bbbbbb;
+    border-radius: 5px;
+    background-color: #ffffff; /* White input background */
+    color: #000; /* Dark text */
+}
+
+form input[type="date"] {
+    font-size: 1em;
+}
+
+.back-btn, .submit-btn {
+    background-color: #112b54; /* Dark blue button */
+    color: white;
+    border: none;
+    padding:3px;
+    margin-bottom: 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-btn, .submit-btn:hover {
+    background-color: #0a1e38; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+
+    form input {
+        font-size: 0.9em;
+    }
+
+    .top-nav h1 {
+        font-size: 1.5em;
+    }
+}

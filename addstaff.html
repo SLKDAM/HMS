@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Staff</title>
+    <link rel="stylesheet" href="./assets/css/addstaff.css">
+</head>
+<body>
+    <div class="container">
+        <header class="top-nav">
+            <h1>Add New Staff</h1>
+            <a href="staff.html" onclick="goBack()" class="back-btn">⬅ Go Back</a>
+        </header>
+
+        <section class="form-container">
+            <form id="addStaffForm">
+                <label for="staffName">Name:</label>
+                <input type="text" id="staffName" required>
+
+                <label for="staffPosition">Position:</label>
+                <input type="text" id="staffPosition" required>
+
+                <label for="staffContact">Contact:</label>
+                <input type="text" id="staffContact" required>
+
+                <label for="staffStatus">Status:</label>
+                <select id="staffStatus" required>
+                    <option value="Active">Active</option>
+                    <option value="On Leave">On Leave</option>
+                </select>
+
+                <button type="submit" class="submit-btn">Add Staff</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="./assets/js/addstaff.js"></script>
+</body>
+</html>

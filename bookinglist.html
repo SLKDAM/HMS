@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Management</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bookinglist.css">
+</head>
+<body>
+    <div class="dashboard-container">
+
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="./assets/images/logo.png" alt="Hotel Logo" class="logo">
+                <h2>Hotel Admin</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#bookings" class="nav-item active"><i class="fa-solid fa-book"></i> Bookings</a>
+                <a href="rooms.html" class="nav-item"><i class="fa-solid fa-bed"></i> Rooms</a>
+                <a href="guest.html" class="nav-item"><i class="fa-solid fa-restroom"></i> Guests</a>
+                <a href="staff.html" class="nav-item"><i class="fa-solid fa-people-carry"></i> Staff</a>
+                <a href="inventory.html" class="nav-item"><i class="fa-solid fa-warehouse"></i> Inventory</a>
+                <a href="viewreport.html" class="nav-item"><i class="fa-regular fa-newspaper"></i> Reports</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-nav">
+                <h1>Dashboard</h1>
+                <div class="profile">
+                    <span class="profile-name"><strong>Admin</strong></span>
+                    <button onclick="logout()" class="logout-btn"><strong>Logout</strong></button>
+                </div>
+            </header>
+
+            <!-- Bookings Section -->
+            <section class="content-section">
+                <h2>Booking List</h2>
+
+                <div class="add-guest">
+                    <button class="add-booking-btn" onclick="navigateToAddBooking()">➕ Add Booking</button>
+                </div>
+
+                <!-- Booking Table -->
+                <table class="booking-table">
+                    <thead>
+                        <tr>
+                            <th>Booking ID</th>
+                            <th>Guest Name</th>
+                            <th>Contact Number</th>
+                            <th>Room Type</th>
+                            <th>Check-in</th>
+                            <th>Check-out</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="booking-list-body">
+                        <!-- Booking rows dynamically added here -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="./assets/js/bookinglist.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Inventory</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/inventory.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="./assets/images/logo.png" alt="Hotel Logo" class="logo">
+                <h2>Hotel Admin</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="bookinglist.html" class="nav-item"><i class="fa-solid fa-book"></i> Bookings</a>
+                <a href="rooms.html" class="nav-item"><i class="fa-solid fa-bed"></i> Rooms</a>
+                <a href="guest.html" class="nav-item"><i class="fa-solid fa-restroom"></i> Guests</a>
+                <a href="staff.html" class="nav-item"><i class="fa-solid fa-people-carry"></i> Staff</a>
+                <a href="#inventory" class="nav-item active"><i class="fa-solid fa-warehouse"></i> Inventory</a>
+                <a href="viewreport.html" class="nav-item"><i class="fa-regular fa-newspaper"></i> Reports</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-nav">
+                <h1>Dashboard</h1>
+                <div class="profile">
+                    <span class="profile-name"><strong>Admin</strong></span>
+                    <button onclick="logout()" class="logout-btn"><strong>Logout</strong></button>
+                    
+                </div>
+            </header>
+            <section id="inventory" class="content-section">
+                <h2>Inventory Details</h2>
+
+                <div class="add-inventory">
+                    <button class="add-inventory-btn" onclick="addInventory()">➕ Add Inventory</button>
+                </div>
+
+                <table class="inventory-table">
+                    <thead>
+                        <tr>
+                            <th>Item ID</th>
+                            <th>Item Name</th>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>I001</td>
+                            <td>Bed Sheets</td>
+                            <td>Room Supplies</td>
+                            <td>50</td>
+                            <td>In Stock</td>
+                            <td><button class="btn edit-btn" onclick="editItem(1)">✏️ Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>I002</td>
+                            <td>Toiletries</td>
+                            <td>Bathroom Supplies</td>
+                            <td>20</td>
+                            <td>Low Stock</td>
+                            <td><button class="btn edit-btn" onclick="editItem(2)">✏️ Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>I003</td>
+                            <td>Towels</td>
+                            <td>Room Supplies</td>
+                            <td>30</td>
+                            <td>In Stock</td>
+                            <td><button class="btn edit-btn" onclick="editItem(3)">✏️ Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>I004</td>
+                            <td>TV Remote</td>
+                            <td>Room Equipment</td>
+                            <td>15</td>
+                            <td>Out of Stock</td>
+                            <td><button class="btn edit-btn" onclick="editItem(4)">✏️ Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>I005</td>
+                            <td>Air Conditioning</td>
+                            <td>Room Equipment</td>
+                            <td>10</td>
+                            <td>In Stock</td>
+                            <td><button class="btn edit-btn" onclick="editItem(5)">✏️ Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td>I006</td>
+                            <td>Mini Fridges</td>
+                            <td>Room Equipment</td>
+                            <td>8</td>
+                            <td>Low Stock</td>
+                            <td><button class="btn edit-btn" onclick="editItem(6)">✏️ Edit</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+        </main>
+    </div>
+
+    <script src="./assets/js/inventory.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background: linear-gradient(135deg, #141E30, #243B55);*/
+    background-color: #ef8c0b;
+    font-family: Arial, sans-serif;
+    color: #f1f1f1;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-box {
+    background-color: #1E1E2F;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo {
+    width: 80px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #f1f1f1;
+  }
+  
+  p {
+    font-size: 0.9em;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 0.9em;
+    color: #aaaaaa;
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #2E2E3E;
+    border: none;
+    border-radius: 5px;
+    color: #f1f1f1;
+    font-size: 1em;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #f1f1f1;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.85em;
+  }
+  
+  .forgot-password:hover {
+    color: #2980b9;
+  }
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Staff</title>
+    <link rel="stylesheet" href="./assets/css/editstaff.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Edit Staff Details</h1>
+            <a href="staff.html" class="back-btn">Back to Staff List</a>
+        </header>
+
+        <section class="form-container">
+            <form id="editStaffForm">
+                <label for="editStaffName">Name:</label>
+                <input type="text" id="editStaffName" required>
+
+                <label for="editStaffPosition">Position:</label>
+                <input type="text" id="editStaffPosition" required>
+
+                <label for="editStaffContact">Contact:</label>
+                <input type="text" id="editStaffContact" required>
+
+                <label for="editStaffStatus">Status:</label>
+                <select id="editStaffStatus" required>
+                    <option value="Active">Active</option>
+                    <option value="On Leave">On Leave</option>
+                </select>
+
+                <button type="submit">Update Staff</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="./assets/js/editsatff.js"></script>
+</body>
+</html>

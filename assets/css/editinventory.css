@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d7eaf6; /* Light blue background */
+    color: #000; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #d7eaf6; /* Light blue */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bbbbbb;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.top-nav h1 {
+    font-size: 1.8em;
+    color: #000;
+}
+
+/* Edit Inventory Form */
+.edit-inventory-container {
+    background-color: #f1f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust width for better presentation */
+}
+
+.edit-inventory-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-inventory-container label {
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+.edit-inventory-container input,
+.edit-inventory-container select {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #3498db; /* Light blue */
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}

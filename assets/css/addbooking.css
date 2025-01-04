@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.dashboard-container {
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #0e5683;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar-header .logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sidebar-nav {
+    width: 100%;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #093654;
+}
+
+.nav-item.active {
+    background-color: #093654;
+}
+
+.nav-item:hover {
+    background-color: #06406a;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    justify-items: center;
+}
+
+.top-nav h1 {
+    font-size: 24px;
+    color: #0e5683;
+    border-bottom: 1px solid #bbbbbb;
+    width: 400px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.content-section {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-items: center;
+    width: 300px;
+}
+
+.content-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn, .reset-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #0e5683;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #093654;
+}
+
+.reset-btn {
+    background-color: #ccc;
+}
+
+.reset-btn:hover {
+    background-color: #999;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Room</title>
+    <link rel="stylesheet" href="./assets/css/addrooms.css">
+</head>
+<body>
+    <main class="main-content">
+        <div class="add-rooms-container">
+            <header class="top-nav">
+                <h1>Add New Room</h1>
+                <button onclick="goBack()" class="back-btn logout-btn">⬅ Go Back</button>
+            </header>
+
+            <form id="addRoomForm" class="addRoomForm">
+                <label for="editGuestRoom">Room Type:</label>
+                <select id="editStatus" class="input-field">
+                    <option value="0">Select</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                </select>
+                
+                <label for="editStatus">AC or Non AC:</label>
+                <select id="editStatus" class="input-field">
+                    <option value="0">Select</option>
+                    <option value="AC">AC</option>
+                    <option value="Non AC">Non AC</option>
+                </select>
+
+                <label for="editPrice">Price:</label>
+                <input type="text" id="editPrice" class="input-field" placeholder="Enter room's Price">
+                <button type="button" class="tab-btn" onclick="updateGuest()">Add Room</button>
+            </form>
+        </section>
+    </main>
+    <script src="./assets/js/addrooms.js"></script>
+</body>
+</html>

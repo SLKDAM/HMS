@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Guest</title>
+    <link rel="stylesheet" href="./assets/css/editguest.css">
+</head>
+<body>
+    <main class="edit-container">
+        <header class="edit-header top-nav">
+            <h1>Edit Guest Details</h1>
+            <button onclick="goBack()" class="back-btn logout-btn">⬅ Go Back</button>
+        </header>
+        <section class="edit-form-container main-content">
+            <form id="editGuestForm" class="editGuestForm">
+                <label for="editGuestId">Guest ID:</label>
+                <input type="text" id="editGuestId" class="input-field" disabled><br>
+
+                <label for="editGuestName">Name:</label>
+                <input type="text" id="editGuestName" class="input-field" placeholder="Enter guest name"><br>
+
+                <label for="editGuestRoom">Room:</label>
+                <input type="text" id="editGuestRoom" class="input-field" placeholder="Enter room type"><br>
+
+                <label for="editCheckIn">Check-in:</label>
+                <input type="date" id="editCheckIn" class="input-field"><br>
+
+                <label for="editStatus">Status:</label>
+                <select id="editStatus" class="input-field">
+                    <option value="Checked In">Checked In</option>
+                    <option value="Checked Out">Checked Out</option>
+                </select>
+
+                <label for="editPaymentStatus">Payment Status:</label>
+                <select id="editPaymentStatus" class="input-field">
+                    <option value="Paid">Paid</option>
+                    <option value="Unpaid">Unpaid</option>
+                </select>
+
+                <button type="button" class="tab-btn" onclick="updateGuest()">Update Guest</button>
+                <button type="button" class="tab-btn delete-btn" onclick="deleteGuest()">Delete Guest</button>
+            </form>
+        </section>
+    </main>
+    <script src="./assets/js/editguest.js"></script>
+</body>
+</html>
