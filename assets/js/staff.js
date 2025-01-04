@@ -36,7 +36,7 @@ function editStaff(staffId) {
     const staff = staffData.find((s) => s.id === staffId);
     if (staff) {
         // Redirect to Edit Staff page with staff ID as a query parameter
-        window.location.href = `Editstaff.html?id=${staff.id}`;
+        window.location.href = `editstaff.html?id=${staff.id}`;
     } else {
         alert("Staff member not found.");
     }
