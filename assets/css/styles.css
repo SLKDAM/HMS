@@ -10,8 +10,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /*background: linear-gradient(135deg, #141E30, #243B55);*/
-    background-color: #ef8c0b;
+    background-image:url(../images/hotels-booking.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 95%;
     font-family: Arial, sans-serif;
     color: #f1f1f1;
   }
