@@ -51,7 +51,7 @@ function navigateToAddGuest() {
 // Navigate to Edit Guest Page
 function viewDetails(guestId) {
     alert('Are you sure you want to view this guest?');
-    window.location.href = `Editguest.html?guestId=${guestId}`;
+    window.location.href = `editguest.html?guestId=${guestId}`;
 }
 
 // Logout Functionality
